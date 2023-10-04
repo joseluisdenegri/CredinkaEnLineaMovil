@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tb_ubicacion"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            map:layout_scrollFlags="scroll|enterAlways"
+            map:navigationIcon="@drawable/ic_arrow_back"
+            map:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_13dp"
+                android:contentDescription="@string/str_imagen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_logo_credinka"
+                map:tint="@color/colorWhite0" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+            tools:context=".ui.maps.UbicacionMapsActivity"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/imb_gps_ubication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@null"
+            android:minWidth="@dimen/dimen_48dp"
+            android:minHeight="@dimen/dimen_48dp"
+            android:contentDescription="@string/str_imagen"
+            android:src="@drawable/drw_circle_gps"
+            tools:ignore="RtlHardcoded" />
+    </FrameLayout>
+</LinearLayout>

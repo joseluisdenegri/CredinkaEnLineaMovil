@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.maps.fragments.MapLocateFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapAPI"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageButton
+        android:id="@+id/imb_gps_ubication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right|center_vertical|center_horizontal|center"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@null"
+        android:contentDescription="@string/str_imagen"
+        android:src="@drawable/drw_circle_gps"
+        tools:ignore="RtlHardcoded" />
+
+</FrameLayout>

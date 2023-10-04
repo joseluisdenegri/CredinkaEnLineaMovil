@@ -1,0 +1,2 @@
+rootProject.name = "CredinkaEnLinea"
+include ':app'

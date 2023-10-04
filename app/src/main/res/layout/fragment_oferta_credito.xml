@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ofertas.comercial.OfertaCreditoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_credinka"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@id/tv_nombres"
+            style="@style/TitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:justificationMode="inter_word"
+            android:textSize="@dimen/dimen_18sp"
+            tools:ignore="TextViewEdits"
+            tools:targetApi="O" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:gravity="center"
+            android:text="@string/str_tienes_un_monto"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/tv_monto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_6dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/str_texto_contacto"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_35dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@id/btn_si"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_14dp"
+            android:layout_marginEnd="@dimen/dimen_30dp"
+            android:background="@drawable/drw_buttom_custom"
+            android:gravity="center"
+            android:text="@string/str_dialog_si"
+            android:textColor="@color/colorWhite0"
+            android:textSize="@dimen/dimen_14sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</FrameLayout>

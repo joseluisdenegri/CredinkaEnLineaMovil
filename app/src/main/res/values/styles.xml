@@ -1,0 +1,105 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+        <item name="actionModeBackground">@color/action_mode</item>
+        <item name="toolbarStyle">@style/Widget.Styled.Toolbar</item>
+        <item name="panelMenuListTheme">@style/PanelMenuList</item>
+        <item name="android:fontFamily">@font/arial</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/arial</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="holo_theme" parent="@android:style/Theme.Holo" />
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/ActionBar.SubtitleTextStyle</item>
+        <item name="elevation">@dimen/actionbar_elevation</item>
+    </style>
+
+    <style name="Widget.Styled.Toolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextAppearance">@style/ActionBar.SubtitleTextStyle</item>
+    </style>
+
+    <style name="PanelMenuList" parent="@style/Theme.AppCompat.CompactMenu">
+        <item name="android:itemTextAppearance">@style/TextAppearanceMenuList</item>
+    </style>
+
+    <style name="ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/colorWhite0</item>
+    </style>
+
+    <style name="ActionBar.SubtitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+        <item name="android:textColor">#eeffffff</item>
+    </style>
+
+    <style name="TextAppearanceMenuList" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textColor">@color/primary_text_default_material_light</item>
+    </style>
+
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TitleTextView" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SubTitleTextView" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/dimen_13sp</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextoEtiquetaCampo">
+        <item name="android:textSize">@dimen/dimen_15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorGray1</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="MyDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="DialogAnimationPopup">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="buttonMaterial" parent="@style/Widget.Material3.Button.IconButton" />
+</resources>

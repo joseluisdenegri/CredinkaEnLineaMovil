@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_productos"
+        android:icon="@drawable/ic_product"
+        android:title="@string/str_productos" />
+
+    <item
+        android:id="@+id/navigation_teofrecemos"
+        android:icon="@drawable/ic_offers"
+        android:title="@string/str_ofertas" />
+
+    <item
+        android:id="@+id/navigation_mas"
+        android:icon="@drawable/ic_mas"
+        android:title="@string/str_mas" />
+</menu>

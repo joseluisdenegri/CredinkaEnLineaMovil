@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_ly_periodo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_16dp"
+    android:background="@color/colorOrange1"
+    android:padding="@dimen/dimen_2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_2dp">
+
+    <ImageView
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:padding="@dimen/dimen_6dp"
+        android:contentDescription="imagen"
+        android:src="@drawable/img_calendar_month"
+        app:tint="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/tv_nombre_perido"
+            style="@style/TitleTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@id/prb_indicador_down"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_gravity="center"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/ly_progresbar_circle" />
+
+            <TextView
+                android:id="@+id/tv_indicator_pgb"
+                style="@style/TitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:text="@string/str_indicator_pg"
+                android:textAllCaps="false"
+                android:textSize="@dimen/dimen_10sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@id/img_check_down"
+            android:layout_width="@dimen/dimen_34dp"
+            android:layout_height="@dimen/dimen_34dp"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:contentDescription="@string/str_imagen"
+            android:background="@drawable/drw_buttom_down"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_download_active"
+            app:tint="@color/colorWhite0" />
+
+    </LinearLayout>
+</LinearLayout>

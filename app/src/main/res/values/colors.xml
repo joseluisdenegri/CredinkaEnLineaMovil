@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F47A05</color>
+    <color name="colorPrimaryDark">#E86807</color>
+    <color name="colorAccent">#F47A05</color>
+    <color name="colorNavigator">#E2E2E2</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="action_mode">#ff00897b</color>
+
+
+    <color name="colorWhite0">#FFFFFF</color>
+    <color name="colorWhite1">#DFDFDF</color>
+    <color name="colorGreen0">#71B200</color>
+    <color name="colorGreen1">#81c902</color>
+    <color name="colorGreen2">#6daa02</color>
+    <color name="colorGreen3">#a7e8b7</color>
+    <color name="colorGreen4">#F8FAE5</color>
+
+    <color name="colorGray0">#939393</color>
+    <color name="colorGray1">#808080</color>
+    <color name="colorGray2">#b3b3b3</color>
+    <color name="colorGray3">#cbcccc</color>
+    <color name="colorGray4">#8A9199</color>
+    <color name="colorGray5">#939393</color>
+    <color name="colorGray6">#F4F4F4</color>
+    <color name="colorGray7">#BDBDBD</color>
+    <color name="colorGray8">#edebeb</color>
+    <color name="colorGray9">#cecece</color>
+
+    <color name="colorBlack0">#ff000000</color>
+    <color name="colorBlack1">#de000000</color>
+    <color name="colorBlack2">#000</color>
+    <color name="colorBlack3">#8c1d1e1c</color>
+
+    <color name="colorRed0">#DA4A4A</color>
+    <color name="colorOrange0">#fde6d8</color>
+    <color name="colorOrange1">#FEF6F1</color>
+</resources>

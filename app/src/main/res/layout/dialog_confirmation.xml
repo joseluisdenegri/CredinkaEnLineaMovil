@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/drw_dialog_line_header"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_titulo_cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/drw_shaded_line"
+        android:orientation="vertical">
+
+        <TextView android:id="@id/tv_titulo_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/str_confirmacion"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimen_16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15dp">
+
+        <TextView
+            android:id="@id/tv_mensaje_confirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_2dp"
+            android:layout_marginEnd="@dimen/dimen_2dp"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorGray1"
+            android:justificationMode="inter_word"
+            android:textSize="@dimen/dimen_16sp"
+            tools:ignore="TextViewEdits"
+            tools:targetApi="O" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:background="@drawable/drw_line_header_nav_bt"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/btn_no"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/drw_buttom_custom_gray"
+            android:gravity="center"
+            android:text="@string/str_dialog_no"
+            android:textColor="@color/colorWhite0"
+            android:textSize="@dimen/dimen_14sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@id/btn_si"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_marginStart="@dimen/dimen_8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/drw_buttom_custom"
+            android:gravity="center"
+            android:text="@string/str_dialog_si"
+            android:textColor="@color/colorWhite0"
+            android:textSize="@dimen/dimen_14sp"
+            tools:ignore="ButtonStyle" />
+
+
+    </LinearLayout>
+</LinearLayout>

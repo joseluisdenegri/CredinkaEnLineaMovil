@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.perfil.PerfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray8"
+            android:paddingStart="@dimen/dimen_30dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_28dp"
+                android:layout_height="@dimen/dimen_28dp"
+                android:contentDescription="@string/str_imagen"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/str_perfil"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorGray1"
+                android:textSize="@dimen/dimen_18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/block_td_tc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_sello"
+                android:layout_width="@dimen/dimen_65dp"
+                android:layout_height="@dimen/dimen_65dp"
+                android:scaleType="centerCrop"
+                fresco:actualImageScaleType="fitCenter"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        style="@style/TitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:drawablePadding="3dp"
+                        android:text="@string/str_nombre"
+                        android:textStyle="bold"
+                        fresco:drawableStartCompat="@drawable/drw_circle_point" />
+
+                    <TextView
+                        android:id="@id/tv_nombres"
+                        style="@style/TitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_weight="0.8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        style="@style/TitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:drawablePadding="3dp"
+                        android:text="@string/str_apellidos"
+                        android:textStyle="bold"
+                        fresco:drawableStartCompat="@drawable/drw_circle_point" />
+
+                    <TextView
+                        android:id="@+id/tv_apellidos"
+                        style="@style/TitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_weight="0.8" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp">
+
+                    <TextView
+                        style="@style/TitleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:drawablePadding="3dp"
+                        android:text="@string/str_fecha_ultimo_aaceso"
+                        android:textStyle="bold"
+                        fresco:drawableStartCompat="@drawable/drw_circle_point" />
+
+                    <TextView
+                        android:id="@id/tv_ultimo_acceso"
+                        style="@style/TitleTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_weight="0.8" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@id/btn_cerrar_sesion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_30dp"
+                android:background="@drawable/drw_buttom_custom"
+                android:text="@string/str_cerrar_sesion"
+                android:textColor="@color/colorWhite0"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
